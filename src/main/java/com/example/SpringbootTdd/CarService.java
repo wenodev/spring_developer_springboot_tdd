@@ -13,6 +13,6 @@ public class CarService {
     }
 
     public Car details(String name) {
-        return null;
+        return carRepository.findByName(name);
     }
 }
