@@ -1,8 +1,8 @@
 package com.example.SpringbootTdd;
 
-import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
+import com.example.SpringbootTdd.domain.Car;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-@Repository
-public class CarRepository {
+public interface CarRepository extends JpaRepository<Car, Long> {
+
 }
